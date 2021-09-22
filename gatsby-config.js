@@ -12,6 +12,12 @@ module.exports = {
   },
   plugins: [
       {
+  resolve: 'gatsby-plugin-mailchimp',
+  options: {
+    endpoint: 'https://ravagecity.us5.list-manage.com/subscribe/post?u=d6fa36d42324513c637a142da&amp;id=83dedd8fba'
+      },
+    },
+      {
         resolve: `gatsby-source-filesystem`,
         options: {
           name: `src`,
