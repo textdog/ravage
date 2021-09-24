@@ -40,6 +40,7 @@ export default function Layout({ children }) {
       <Link to={`/about/`}
         css={css`
           float: right;
+          text-indent: 2em;
         `}
       >
         About
@@ -47,6 +48,7 @@ export default function Layout({ children }) {
        <Link to={`/press/`}
         css={css`
           float: right;
+          text-indent: 2em;
         `}
       >
         Press
