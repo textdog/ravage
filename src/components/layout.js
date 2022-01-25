@@ -3,7 +3,6 @@ import { css } from "@emotion/core"
 import { useStaticQuery, Link, graphql } from "gatsby"
 
 import { rhythm } from "../utils/typography"
-import Footer from "./footer"
 
 export default function Layout({ children }) {
   const data = useStaticQuery(
@@ -47,7 +46,6 @@ export default function Layout({ children }) {
         About
       </Link>
       {children}
-      <Footer />
     </div>
   )
 }

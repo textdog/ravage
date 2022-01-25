@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import { css } from "@emotion/core"
 import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
+import Footer from "../components/footer"
 
 export default function Home({ data }) {
   console.log(data)
@@ -49,6 +50,7 @@ export default function Home({ data }) {
           </div>
         ))}
       </div>
+      <Footer />
     </Layout>
   )
 }

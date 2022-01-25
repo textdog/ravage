@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import addToMailchimp from "gatsby-plugin-mailchimp"
 import footerStyles from "./footer.module.css"
-import ArrowRight from "../images/arrow-right.svg"
 
 const Footer = () => {
   const [email, setEmail] = useState("")
