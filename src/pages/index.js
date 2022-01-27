@@ -21,6 +21,7 @@ export default function Home({ data }) {
 </p>
         </h1>
         <iframe width="620" height="364" src="https://player.vimeo.com/video/545734234" title="Vimeo player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <p> <Footer /> </p>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
@@ -50,7 +51,7 @@ export default function Home({ data }) {
           </div>
         ))}
       </div>
-      <Footer />
+     
     </Layout>
   )
 }
