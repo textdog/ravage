@@ -3,6 +3,10 @@ import { css } from "@emotion/core"
 import { useStaticQuery, Link, graphql } from "gatsby"
 
 import { rhythm } from "../utils/typography"
+import "./layout.css"
+export default function Layout({ children }) {
+  return <div>{children}</div>
+}
 
 export default function Layout({ children }) {
   const data = useStaticQuery(

@@ -20,7 +20,10 @@ export default function Home({ data }) {
           <p>Worthington and Chesterfield fight a war, while telecom companies keep their call centers open with contractors. The ransacking of the mind results in its own artistry. Ravage is a 75-minute performance art narrative. 
 </p>
         </h1>
-        <iframe width="620" height="364" src="https://player.vimeo.com/video/545734234" title="Vimeo player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <div class="videoWrapper">
+        <iframe width="560" height="349" frameborder="0" src="https://player.vimeo.com/video/545734234?h=f6b45ef67a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="gouche_intro"></iframe>
+        </div>
         <p> <Footer /> </p>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
