@@ -51,7 +51,7 @@ const Footer = () => {
           className={footerStyles.mailChimpSubmit}
           disabled={isSubmitting || !email}
         >
-          Sign up
+          &#x21e5;
         </button>
       </form>
       {showSuccess ? (
