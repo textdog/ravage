@@ -27,7 +27,7 @@
   border-radius: 5px;
   flex: 0 0 calc(20% - 8px);
   width: 100%;
-  font-size: 14px;
+  font-size: 20px;
 }
 .footerErrorMessage, .footerSuccessMessage {
   margin-top: 10px;
@@ -41,13 +41,9 @@
 .footerSuccessMessage {
   font-weight: 600;
 }
+
 @media only screen and (max-width: 560px) {
-  .mailChimpInput {
-    flex: 0 0 100%;
-  }
-  .mailChimpSubmit {
-    margin-left: 0px;
-    margin-top: 8px;
-    padding: 8px 15px;
-  }
+ .mailChimpSubmit {
+  font-size: 16px;
+}
 }
