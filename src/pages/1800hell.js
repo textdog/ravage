@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout.js"
+import Jotform from "../components/jotform.js"
 
 export default function Hell ({ data }) {
     return (
@@ -31,22 +32,7 @@ export default function Hell ({ data }) {
       </p>
       </h4>
 
-
-    <div class="link">
-    <a href="javascript:void(
-        window.open(
-          'https://form.jotform.com/220327451781049',
-          'blank',
-          'scrollbars=yes,
-          toolbar=no,
-          width=700,
-          height=500'
-        )
-      )
-    ">
-      CALL 1-800-HELL
-    </a>
-	</div>
+ <p> <Jotform /> </p>
 
 </div>
 
