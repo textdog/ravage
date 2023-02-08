@@ -16,10 +16,11 @@ export default function Home({ data }) {
             border-bottom: 1px solid;
           `}
         >
-          Ravage says hello:
-          <p>Worthington and Chesterfield fight a war, while telecom companies keep their call centers open with contractors. The ransacking of the mind results in its own artistry. Ravage is a 75-minute performance art narrative. 
+          
+          <p>RAVAGE. It's a farce. An inside-the-head assessment of reality goes up against call scripts. 
 </p>
         </h1>
+        <h3>HD/SD/digital 35mm, color. 55' in two parts</h3>
         <div class="videoWrapper">
         <iframe width="560" height="349" frameborder="0" src="https://player.vimeo.com/video/545734234?h=f6b45ef67a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
         allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="gouche_intro"></iframe>
