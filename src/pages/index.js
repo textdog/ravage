@@ -15,21 +15,23 @@ export default function Home({ data }) {
             border-bottom: 1px solid;
           `}
         >
-          Ravage says hello:
-          <p>Worthington and Chesterfield fight a war, while telecom companies keep their call centers open with contractors. The ransacking of the mind results in its own artistry. Ravage is a 75-minute performance art narrative. 
+          
+          <p>RAVAGE. It's a farce. An inside the head assessment of reality going up against call scripts.
 </p>
         </h1>
+        <h3>HD/SD/digital 35mm, color, 55' in two parts</h3>
+        
         <img src="https://i.vimeocdn.com/video/845098068_620.jpg" alt="/"></img>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
-            <Link 
+              <Link
               to={node.fields.slug}
               css={css`
                 text-decoration: none;
                 color: inherit;
               `}
-              >
+            >
             <h3
               css={css`
                 margin-bottom: ${rhythm(1 / 4)};
