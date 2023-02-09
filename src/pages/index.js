@@ -20,7 +20,7 @@ export default function Home({ data }) {
           <p>RAVAGE. It's a farce. An inside-the-head assessment of reality goes up against call scripts. 
 </p>
         </h1>
-        <h3>HD/SD/digital 35mm, color. Part 1: 25', Part 2: 20' </h3>
+        <h4>HD/SD/digital 35mm, color. 25', 20' </h4>
         <div class="videoWrapper">
         <iframe width="800" height="570" frameborder="0" src="https://player.vimeo.com/video/545734234?h=f6b45ef67a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
         allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="gouche_intro"></iframe>
@@ -49,7 +49,7 @@ export default function Home({ data }) {
                   color: #bbb;
                 `}
               >
-                — {node.frontmatter.date}
+              
               </span>
             </h3>
             <p>{node.excerpt}</p>
@@ -93,5 +93,15 @@ css={css`
 
          <h4>{data.allMarkdownRemark.totalCount}On What</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
+
+          <span
+                css={css`
+                  color: #bbb;
+                `}
+              >
+              — {node.frontmatter.date}
+              </span>
+            </h3>
+            <p>{node.excerpt}</p>
 */
   
