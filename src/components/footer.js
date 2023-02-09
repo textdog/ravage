@@ -33,7 +33,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <h2 className={footerStyles.mailChimpTitle}>Sign up for newsletter</h2>
+      <h2 className={footerStyles.mailChimpTitle}>Stay updated</h2>
       <form
         className={footerStyles.mailChimpForm}
         onSubmit={e => email && _handleSubmit(e)}
@@ -50,6 +50,7 @@ const Footer = () => {
           type="submit"
           className={footerStyles.mailChimpSubmit}
           disabled={isSubmitting || !email}
+        
         >
           Submit
         </button>

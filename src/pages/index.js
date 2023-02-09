@@ -13,20 +13,22 @@ export default function Home({ data }) {
         <h1
           css={css`
             display: inline-block;
-            border-bottom: 1px solid;
+        
           `}
         >
           
           <p>RAVAGE. It's a farce. An inside-the-head assessment of reality goes up against call scripts. 
 </p>
         </h1>
-        <h3>HD/SD/digital 35mm, color. 55' in two parts</h3>
+        <h3>HD/SD/digital 35mm, color. Part 1: 25', Part 2: 20' </h3>
         <div class="videoWrapper">
-        <iframe width="560" height="349" frameborder="0" src="https://player.vimeo.com/video/545734234?h=f6b45ef67a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+        <iframe width="800" height="570" frameborder="0" src="https://player.vimeo.com/video/545734234?h=f6b45ef67a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
         allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="gouche_intro"></iframe>
         </div>
         <p> <Footer /> </p>
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+        <p>
+        </p>
+        <h2>On What</h2>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link 
@@ -83,5 +85,13 @@ export const query = graphql`
 
 /* <p>Worthington and Chesterfield are fighting a war, while telecom companies keep their call centers open with contractors. The ransacking of the mind results in its own artistry. Ravage is a 75-minute performance art narrative. 
 </p>
+
+css={css`
+            display: inline-block;
+         *border-bottom: 1px solid;
+
+
+         <h4>{data.allMarkdownRemark.totalCount}On What</h4>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
 */
   

@@ -1,12 +1,15 @@
 html {
-    background-color: lavenderblush;
+    background-color: rgb(0, 0, 37);
+    /**color: #fefefe; */
+    font-family: "Atkinson Hyperlegible";
+    
 }
 
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .videoWrapper iframe {
@@ -24,4 +27,9 @@ html {
 .link {
   font-size: 24px;
   margin-bottom: 38px;
+}
+
+body {
+  
+  
 }
