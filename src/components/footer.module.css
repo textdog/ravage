@@ -33,6 +33,7 @@
   width: 100%;
   font-size: 14px;
   font-family: "Atkinson Hyperlegible";
+  margin-bottom: 100px;
 }
 .footerErrorMessage, .footerSuccessMessage {
   margin-top: 50px;
