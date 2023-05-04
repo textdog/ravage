@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background: #fff;
+    font-family: 'Inter';
+    font-size: 1.72vh;
+    overflow-y: scroll;
+}
+
+section.above-the-fold {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin: 0px auto;
+    max-width: 1200px;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0px 15px;
+    background: white;
+    overflow: hidden;
+}
+
+section.above-the-fold header {
+    display: flex;
+    width: 100%;
+    height: 14%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 0 0 1em 0;
+    align-items: flex-end;
+}
+
+section.above-the-fold header div.vertical-align {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+section.above-the-fold header div.vertical-align h1 {
+    text-transform: uppercase;
+    font-size: 4.3em;
+    font-weight: 300;
+}
+
+section.above-the-fold header div.vertical-align h2 {
+    text-transform: uppercase;
+    padding-left: 1em;
+    line-height: 1.4em;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+section.above-the-fold header div.vertical-align a {
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 1.4em;
+    font-size: 1.1em;
+    font-weight: bold;
+    flex-grow: 2;
+}
+
+section.above-the-fold section.video-container {
+    background-color: white;
+    height: 52%;
+}
+
+section.above-the-fold section.video-container div.corrective-routine {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    max-width: 1072px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    background-image: url("../images/correction.png");
+    background-size: auto 130%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    overflow: hidden;
+}
+
+section.above-the-fold section.video-container div.corrective-routine ul.video {
+    max-width: 940px;
+    width: 100%;
+    height: 85%;
+    background-image: url("../images/video.png");
+    background-size: auto 127%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+}
+
+section.above-the-fold section.video-container div.corrective-routine ul.video li {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.above-the-fold section.video-container div.corrective-routine ul.video li:first-child {
+    justify-content: flex-end;
+    padding-bottom: 1em;
+    text-align: left;
+}
+
+section.above-the-fold section.video-container div.corrective-routine ul.video li:nth-of-type(even) {
+    font-size: 1.4em;
+}
+
+section.above-the-fold section.video-container div.corrective-routine ul.video li:last-child {
+    justify-content: flex-end;
+    padding-bottom: 1em;
+    text-align: right;
+}
+
+section.above-the-fold main {
+    background: white;
+    height: 20%;
+    overflow: hidden;
+}
+
+section.above-the-fold main img {
+    float: right;
+    height: 100%;
+    max-height: 12vh;
+    width: auto;
+}
+
+section.above-the-fold main h3 {
+    text-transform: uppercase;
+    font-size: 3.2em;
+    font-weight: 300;
+    transform: translateY(-40%);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+section.above-the-fold main h4 {
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 1.25em;
+}
+
+section.above-the-fold main ul li {
+    line-height: 1.25em;
+    font-size: 1.1em;
+}
+
+section.above-the-fold section.columns {
+    height: 14%;
+    overflow: hidden;
+    display: flex;
+}
+
+section.above-the-fold section.columns aside {
+    width: 33%;
+    box-sizing: border-box;
+    padding-right: 4em;
+    line-height: 1.25em;
+}
+
+section.above-the-fold section.columns aside h5 {
+    text-transform: uppercase;
+    margin: 1.25em 0 1.25em 0;
+}
+
+section.above-the-fold section.columns aside h6 {
+    text-transform: uppercase;
+    margin-bottom: 1.25em;
+    font-weight: bold;
+}
+
+section.below-the-fold {
+    position: relative;
+    margin-top: 100vh;
+    z-index: 2;
+}
+
+section.below-the-fold img {
+    width: 100%;
+    height: auto;
+}
