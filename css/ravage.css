@@ -20,36 +20,43 @@
 body {
     background: #fff;
     font-family: 'Inter';
-    font-size: 1.72vh;
-    overflow-y: scroll;
+    font-size: 1em;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    cursor: crosshair;
+}
+
+div.layout {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
 }
 
 section.above-the-fold {
-    position: fixed;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateZ(0px) scale(1);
+    top: 0px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    left: 50%;
-    top: 0px;
-    transform: translateX(-50%);
-    z-index: 1;
     margin: 0px auto;
     max-width: 1200px;
-    width: 100%;
-    height: 100vh;
     box-sizing: border-box;
     padding: 0px 15px;
     background: white;
-    overflow: hidden;
 }
 
 section.above-the-fold header {
     display: flex;
     width: 100%;
-    height: 14%;
     background-color: #fff;
     box-sizing: border-box;
     padding: 0 0 1em 0;
     align-items: flex-end;
+    justify-content: start;
+    margin: 2em 0 .5em 0;
 }
 
 section.above-the-fold header div.vertical-align {
@@ -61,81 +68,90 @@ section.above-the-fold header div.vertical-align {
 
 section.above-the-fold header div.vertical-align h1 {
     text-transform: uppercase;
-    font-size: 4.3em;
-    font-weight: 300;
+    text-align: left;
+    font-size: 3.3em;
+    font-weight: normal;
 }
 
 section.above-the-fold header div.vertical-align h2 {
     text-transform: uppercase;
-    padding-left: 1em;
+    padding-left: 2em;
     line-height: 1.4em;
     font-size: 1.1em;
     font-weight: bold;
 }
+
 section.above-the-fold header div.vertical-align a {
+    text-align: right;
+    flex-grow: 2;
     text-transform: uppercase;
     text-align: right;
     line-height: 1.4em;
     font-size: 1.1em;
     font-weight: bold;
     flex-grow: 2;
+    cursor: pointer;
+}
+
+section.above-the-fold header div.vertical-align a img {
+    height: 80px;
+    width: 80px;
 }
 
 section.above-the-fold section.video-container {
-    background-color: white;
-    height: 52%;
-}
-
-section.above-the-fold section.video-container div.corrective-routine {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    height: 100%;
-    max-width: 1072px;
+    background-color: white;
+    width: 100%;
+    max-width: 1200px;
     margin: 0px auto;
-    box-sizing: border-box;
-    background-image: url("../images/correction.png");
-    background-size: auto 130%;
-    background-repeat: no-repeat;
-    background-position: center top;
-    overflow: hidden;
+    z-index: 2;
+    white-space: nowrap;
+    font-size: 0em;
 }
 
-section.above-the-fold section.video-container div.corrective-routine ul.video {
+section.above-the-fold section.video-container img {
+    width: 100%;
+    height: auto;
+}
+
+section.above-the-fold section.video-container ul.video {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
     max-width: 940px;
     width: 100%;
     height: 85%;
-    background-image: url("../images/video.png");
+    background-image: url("../images/video.jpg");
     background-size: auto 127%;
     background-repeat: no-repeat;
     background-position: center top;
     display: flex;
     justify-content: center;
+    font-size: 16px;
 }
 
-section.above-the-fold section.video-container div.corrective-routine ul.video li {
+section.above-the-fold section.video-container ul.video li {
     color: white;
     text-align: center;
     font-size: 1.2em;
-    width: 26%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-section.above-the-fold section.video-container div.corrective-routine ul.video li:first-child {
+section.above-the-fold section.video-container ul.video li:first-child {
     justify-content: flex-end;
     padding-bottom: 1em;
     text-align: left;
 }
 
-section.above-the-fold section.video-container div.corrective-routine ul.video li:nth-of-type(even) {
+section.above-the-fold section.video-container ul.video li:nth-of-type(even) {
     font-size: 1.4em;
 }
 
-section.above-the-fold section.video-container div.corrective-routine ul.video li:last-child {
+section.above-the-fold section.video-container ul.video li:last-child {
     justify-content: flex-end;
     padding-bottom: 1em;
     text-align: right;
@@ -143,15 +159,6 @@ section.above-the-fold section.video-container div.corrective-routine ul.video l
 
 section.above-the-fold main {
     background: white;
-    height: 20%;
-    overflow: hidden;
-}
-
-section.above-the-fold main img {
-    float: right;
-    height: 100%;
-    max-height: 12vh;
-    width: auto;
 }
 
 section.above-the-fold main h3 {
@@ -161,6 +168,37 @@ section.above-the-fold main h3 {
     transform: translateY(-40%);
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+section.above-the-fold form {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+section.above-the-fold form input {
+    font-family: 'Inter';
+    font-size: 16px;
+    text-decoration: underline;
+    border: 0px;
+    width: auto;
+    text-align: center;
+}
+
+section.above-the-fold form button {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    border: 0px;
+    cursor: pointer;
+    background: transparent;
+}
+
+section.above-the-fold form strong {
+    font-weight: bold;
+    padding-right: 1em;
 }
 
 section.above-the-fold main h4 {
@@ -175,7 +213,7 @@ section.above-the-fold main ul li {
 }
 
 section.above-the-fold section.columns {
-    height: 14%;
+    margin-top: 1em;
     overflow: hidden;
     display: flex;
 }
@@ -199,12 +237,66 @@ section.above-the-fold section.columns aside h6 {
 }
 
 section.below-the-fold {
-    position: relative;
-    margin-top: 100vh;
+    position: absolute;
+    left: -6px;
+    top: 200vh;
+    height: 100vh;
     z-index: 2;
+    transform: translateZ(-1px) scale(2);
+    font-size: 0px;
 }
 
 section.below-the-fold img {
     width: 100%;
     height: auto;
+}
+
+form.modal {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateZ(-.5px) scale(1.5);
+    top: 160vh;    
+    font-size: 16px;
+    margin-top: 0vh;
+    max-width: 600px;
+    width: 100%;
+    background: #2a4d3d;
+/*    border-radius: 10px;*/
+    z-index: 69;
+    text-align: center;
+    background-image: url("../images/snow.jpg");
+    background-size: 100% auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, .5);
+}
+
+form.modal h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin: 1em 0 1em 0;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+
+form.modal fieldset {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+form.modal fieldset input {
+    height: 40px;
+    width: 100%;
+    max-width: 250px;
+    box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: 'Inter';
+}
+
+form.modal fieldset button {
+    height: 40px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Inter';
 }
