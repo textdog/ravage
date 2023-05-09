@@ -22,30 +22,28 @@ body {
     font-family: 'Inter';
     font-size: 1em;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
     cursor: crosshair;
 }
 
-div.layout {
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 1px;
-}
-
 section.above-the-fold {
-    position: absolute;
+    display: block;
     left: 50%;
-    transform: translateX(-50%) translateZ(0px) scale(1);
     top: 0px;
     width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     margin: 0px auto;
-    max-width: 1200px;
     box-sizing: border-box;
     padding: 0px 15px;
     background: white;
+    z-index: 1;
+}
+
+section.above-the-fold.fixed {
+    position: fixed;
+    transform: translateX(-50%);
 }
 
 section.above-the-fold header {
@@ -238,30 +236,21 @@ section.above-the-fold section.columns aside h6 {
 
 section.below-the-fold {
     position: absolute;
-    left: -6px;
-    top: 200vh;
-    height: 100vh;
     z-index: 2;
-    transform: translateZ(-1px) scale(2);
     font-size: 0px;
+    margin-top: -150px;
 }
 
-section.below-the-fold img {
-    width: 100%;
-    height: auto;
-}
-
-form.modal {
+section.below-the-fold form.modal {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateZ(-.5px) scale(1.5);
-    top: 160vh;    
+    top: 100px;
+    transform: translateX(-50%);
     font-size: 16px;
     margin-top: 0vh;
     max-width: 600px;
     width: 100%;
     background: #2a4d3d;
-/*    border-radius: 10px;*/
     z-index: 69;
     text-align: center;
     background-image: url("../images/snow.jpg");
@@ -269,7 +258,7 @@ form.modal {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, .5);
 }
 
-form.modal h2 {
+section.below-the-fold form.modal h2 {
     font-size: 2em;
     font-weight: bold;
     color: white;
@@ -278,13 +267,13 @@ form.modal h2 {
     text-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
 }
 
-form.modal fieldset {
+section.below-the-fold form.modal fieldset {
     display: flex;
     justify-content: center;
     margin-bottom: 2em;
 }
 
-form.modal fieldset input {
+section.below-the-fold form.modal fieldset input {
     height: 40px;
     width: 100%;
     max-width: 250px;
@@ -294,9 +283,14 @@ form.modal fieldset input {
     font-family: 'Inter';
 }
 
-form.modal fieldset button {
+section.below-the-fold form.modal fieldset button {
     height: 40px;
     box-sizing: border-box;
     cursor: pointer;
     font-family: 'Inter';
+}
+
+section.below-the-fold img {
+    width: 100%;
+    height: auto;
 }
