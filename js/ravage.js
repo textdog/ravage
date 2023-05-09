@@ -7,6 +7,7 @@ const ev                    = document.addEventListener.bind(document),
 let weirdShitOffset;
 
 const ravage = () => {
+    console.log('ravage');
     window.addEventListener('resize', initCoordinates);
     window.addEventListener('scroll', scrollCallback);
     initCoordinates();
@@ -31,13 +32,4 @@ const scrollCallback = () => {
     }
 }
 
-switch(document.readyState) {
-    case 'complete':
-    case 'loaded':
-    case 'interactive':
-        ravage();
-        break;
-    default:
-        if (typeof document.addEventListener === 'function')
-            ev('DOMContentLoaded', ravage, false);
-}
+window.addEventListener('load', ravage);
