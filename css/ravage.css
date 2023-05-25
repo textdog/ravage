@@ -120,7 +120,7 @@ section.above-the-fold section.video-container ul.video {
     max-width: 940px;
     width: 100%;
     height: 85%;
-    background-image: url("../images/video-progressive.jpg");
+    background-image: url("../images/video-thumbnail.gif");
     background-size: auto 127%;
     background-repeat: no-repeat;
     background-position: center top;
