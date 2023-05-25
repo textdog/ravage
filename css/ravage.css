@@ -255,7 +255,7 @@ section.below-the-fold form.modal {
     text-align: center;
     background-image: url("../images/snow.jpg");
     background-size: 100% auto;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 20px #72c659;
 }
 
 section.below-the-fold form.modal h2 {
