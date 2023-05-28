@@ -290,6 +290,7 @@ section.below-the-fold img {
     height: auto;
 }
 
+/* mobile LAST */
 @media (max-width: 640px) {
     section.above-the-fold header div.vertical-align {
         display: block;
@@ -331,6 +332,7 @@ section.below-the-fold img {
     section.above-the-fold main ul li {
         line-height: 1.4em;
         margin-bottom: 1em;
+        font-size: 90%;
     }
     section.above-the-fold section.columns {
         display: block;
