@@ -187,6 +187,7 @@ section.above-the-fold form button {
     border: 0px;
     cursor: pointer;
     background: transparent;
+    color: black;
 }
 
 section.above-the-fold form strong {
