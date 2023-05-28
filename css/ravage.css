@@ -289,3 +289,54 @@ section.below-the-fold img {
     width: 100%;
     height: auto;
 }
+
+@media (max-width: 640px) {
+    section.above-the-fold header div.vertical-align {
+        display: block;
+    }
+    section.above-the-fold header div.vertical-align h1 {
+        margin-bottom: .2em;
+    }
+    section.above-the-fold header div.vertical-align h2 {
+        padding-left: 0px;
+        font-size: 80%;
+        margin-bottom: 1em;
+        line-height: 1.6em;
+    }
+    section.above-the-fold section.video-container ul.video li {
+        font-size: 80%;
+    }
+    section.above-the-fold section.video-container ul.video li:nth-of-type(even) {
+        font-size: 90%;
+        font-weight: bold;
+    }
+    section.above-the-fold main h3 {
+        font-size: 2em;
+    }
+    section.above-the-fold form {
+        float: none;
+        margin-bottom: 2em;
+    }
+    section.above-the-fold form input {
+        width: 100%;
+    }
+    section.above-the-fold main h4 {
+        line-height: 1.4em;
+        margin-bottom: 1em;
+    }
+    section.above-the-fold main ul {
+        list-style-type: disc;
+        padding-left: 15px;
+    }
+    section.above-the-fold main ul li {
+        line-height: 1.4em;
+        margin-bottom: 1em;
+    }
+    section.above-the-fold section.columns {
+        display: block;
+    }
+    section.above-the-fold section.columns aside { 
+        width: 100%;
+        padding-right: 0px;
+    }
+}
