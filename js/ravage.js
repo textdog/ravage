@@ -2,7 +2,7 @@ const ev                    = document.addEventListener.bind(document),
       q                     = (el, qry) => { return el.querySelector(qry); },
       CONTENT               = q(document.body, 'section.above-the-fold'),
       WEIRDSHIT             = q(document.body, 'section.below-the-fold'),
-      WEIRD_NEGATIVE_MARGIN = 150;
+      WEIRD_NEGATIVE_MARGIN = 50;
 
 let weirdShitOffset;
 

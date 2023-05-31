@@ -234,7 +234,7 @@ section.below-the-fold {
     position: absolute;
     z-index: 2;
     font-size: 0px;
-    margin-top: -150px;
+    margin-top: -50px;
 }
 
 section.below-the-fold form.modal {
