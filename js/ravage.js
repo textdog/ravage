@@ -7,7 +7,6 @@ const ev                    = document.addEventListener.bind(document),
 let weirdShitOffset;
 
 const ravage = () => {
-    console.log('ravage');
     window.addEventListener('resize', initCoordinates);
     window.addEventListener('scroll', scrollCallback);
     initCoordinates();
