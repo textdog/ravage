@@ -117,13 +117,8 @@ section.above-the-fold section.video-container ul.video {
     left: 50%;
     transform: translateX(-50%);
     bottom: 0px;
-    max-width: 940px;
     width: 100%;
     height: 85%;
-    background-image: url("../images/video-progressive.jpg");
-    background-size: auto 127%;
-    background-repeat: no-repeat;
-    background-position: center top;
     display: flex;
     justify-content: center;
     font-size: 16px;
@@ -132,8 +127,8 @@ section.above-the-fold section.video-container ul.video {
 section.above-the-fold section.video-container ul.video li {
     color: white;
     text-align: center;
-    font-size: 1.2em;
-    width: 30%;
+    font-size: 1.4em;
+    width: 32%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,7 +141,7 @@ section.above-the-fold section.video-container ul.video li:first-child {
 }
 
 section.above-the-fold section.video-container ul.video li:nth-of-type(even) {
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 section.above-the-fold section.video-container ul.video li:last-child {
@@ -192,6 +187,7 @@ section.above-the-fold form button {
     border: 0px;
     cursor: pointer;
     background: transparent;
+    color: black;
 }
 
 section.above-the-fold form strong {
@@ -253,9 +249,9 @@ section.below-the-fold form.modal {
     background: #2a4d3d;
     z-index: 69;
     text-align: center;
-    background-image: url("../images/snow.jpg");
+    background-image: url("../images/snow-green.jpg");
     background-size: 100% auto;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 20px #72c659;
 }
 
 section.below-the-fold form.modal h2 {
@@ -293,4 +289,57 @@ section.below-the-fold form.modal fieldset button {
 section.below-the-fold img {
     width: 100%;
     height: auto;
+}
+
+/* mobile LAST */
+@media (max-width: 640px) {
+    section.above-the-fold header div.vertical-align {
+        display: block;
+    }
+    section.above-the-fold header div.vertical-align h1 {
+        margin-bottom: .2em;
+    }
+    section.above-the-fold header div.vertical-align h2 {
+        padding-left: 0px;
+        font-size: 80%;
+        margin-bottom: 1em;
+        line-height: 1.6em;
+    }
+    section.above-the-fold section.video-container ul.video li {
+        font-size: 80%;
+    }
+    section.above-the-fold section.video-container ul.video li:nth-of-type(even) {
+        font-size: 90%;
+        font-weight: bold;
+    }
+    section.above-the-fold main h3 {
+        font-size: 2em;
+    }
+    section.above-the-fold form {
+        float: none;
+        margin-bottom: 2em;
+    }
+    section.above-the-fold form input {
+        width: 100%;
+    }
+    section.above-the-fold main h4 {
+        line-height: 1.4em;
+        margin-bottom: 1em;
+    }
+    section.above-the-fold main ul {
+        list-style-type: disc;
+        padding-left: 15px;
+    }
+    section.above-the-fold main ul li {
+        line-height: 1.4em;
+        margin-bottom: 1em;
+        font-size: 90%;
+    }
+    section.above-the-fold section.columns {
+        display: block;
+    }
+    section.above-the-fold section.columns aside { 
+        width: 100%;
+        padding-right: 0px;
+    }
 }
