@@ -1,0 +1,363 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background: #fff;
+    font-family: 'Inter';
+    font-size: 1em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    cursor: crosshair;
+}
+
+section.above-the-fold {
+    display: block;
+    left: 50%;
+    top: 0px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding: 0px 15px;
+    background: white;
+    z-index: 1;
+}
+
+section.above-the-fold.fixed {
+    position: fixed;
+    transform: translateX(-50%);
+}
+
+section.above-the-fold header {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 0 0 1em 0;
+    align-items: flex-end;
+    justify-content: start;
+    margin: 2em 0 .5em 0;
+}
+
+section.above-the-fold header div.vertical-align {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+section.above-the-fold header div.vertical-align h1 {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 3.3em;
+    font-weight: normal;
+}
+
+section.above-the-fold header div.vertical-align h2 {
+    text-transform: uppercase;
+    padding-left: 2em;
+    line-height: 1.4em;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+section.above-the-fold header div.vertical-align a {
+    text-align: right;
+    flex-grow: 2;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 1.4em;
+    font-size: 1.1em;
+    font-weight: bold;
+    flex-grow: 2;
+    cursor: pointer;
+}
+
+section.above-the-fold header div.vertical-align a img {
+    height: 80px;
+    width: 80px;
+}
+
+section.above-the-fold section.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    z-index: 2;
+    white-space: nowrap;
+}
+
+section.above-the-fold section.video-container div.side-align {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    @media (max-width: 400px) {
+        width: 100%;}
+    box-sizing: border-box;
+    align-items: left;
+      
+}
+
+section.above-the-fold section.video-container div.side-align h2 {
+    text-transform: uppercase;
+    padding-left: 2em;
+    line-height: 1.4em;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+section.above-the-fold section.video-container img {
+    display: inline-block;
+    width: 70%;
+    height: auto;
+}
+
+
+section.above-the-fold section.video-container ul.video {
+    position: absolute;
+    right: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: left;
+    font-size: 16px;
+}
+
+section.above-the-fold section.video-container ul.video li {
+    color: white;
+    text-align: left;
+    font-size: 1.4em;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.above-the-fold section.video-container ul.video li:first-child {
+    justify-content: flex-end;
+    padding-bottom: 1em;
+    text-align: left;
+}
+
+section.above-the-fold section.video-container ul.video li:nth-of-type(even) {
+    font-size: 1.5em;
+}
+
+section.above-the-fold section.video-container ul.video li:last-child {
+    justify-content: flex-end;
+    padding-bottom: 1em;
+    text-align: right;
+}
+
+section.above-the-fold main {
+    background: white;
+}
+
+section.above-the-fold main h3 {
+    text-transform: uppercase;
+    font-size: 3.2em;
+    font-weight: 300;
+    transform: translateY(-40%);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+section.above-the-fold form {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+section.above-the-fold form input {
+    font-family: 'Inter';
+    font-size: 16px;
+    text-decoration: underline;
+    border: 0px;
+    width: auto;
+    text-align: center;
+}
+
+section.above-the-fold form button {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    border: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: black;
+}
+
+section.above-the-fold form strong {
+    font-weight: bold;
+    padding-right: 1em;
+}
+
+section.above-the-fold main h4 {
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 1.25em;
+}
+
+section.above-the-fold main ul li {
+    line-height: 1.25em;
+    font-size: 1.1em;
+}
+
+section.above-the-fold section.columns {
+    margin-top: 1em;
+    overflow: hidden;
+    display: flex;
+}
+
+section.above-the-fold section.columns aside {
+    width: 33%;
+    box-sizing: border-box;
+    padding-right: 4em;
+    line-height: 1.25em;
+}
+
+section.above-the-fold section.columns aside h5 {
+    text-transform: uppercase;
+    margin: 1.25em 0 1.25em 0;
+}
+
+section.above-the-fold section.columns aside h6 {
+    text-transform: uppercase;
+    margin-bottom: 1.25em;
+    font-weight: bold;
+}
+
+section.below-the-fold {
+    position: absolute;
+    z-index: 2;
+    font-size: 0px;
+    margin-top: -50px;
+}
+
+section.below-the-fold form.modal {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    font-size: 16px;
+    margin-top: 0vh;
+    max-width: 600px;
+    width: 100%;
+    z-index: 69;
+    text-align: center;
+    background-color: #49796B;
+    background-size: 100% auto;
+    box-shadow: 0px 0px 20px #49796B;
+}
+
+section.below-the-fold form.modal h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin: 1em 0 1em 0;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+
+section.below-the-fold form.modal fieldset {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+section.below-the-fold form.modal fieldset input {
+    height: 40px;
+    width: 100%;
+    max-width: 250px;
+    box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: 'Inter';
+}
+
+section.below-the-fold form.modal fieldset button {
+    height: 40px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Inter';
+}
+
+section.below-the-fold img {
+    width: 100%;
+    height: auto;
+}
+
+/* mobile LAST */
+@media (max-width: 640px) {
+    section.above-the-fold header div.vertical-align {
+        display: block;
+    }
+    section.above-the-fold header div.vertical-align h1 {
+        margin-bottom: .2em;
+    }
+    section.above-the-fold header div.vertical-align h2 {
+        padding-left: 0px;
+        font-size: 80%;
+        margin-bottom: 1em;
+        line-height: 1.6em;
+    }
+    section.above-the-fold section.video-container ul.video li {
+        font-size: 80%;
+    }
+    section.above-the-fold section.video-container ul.video li:nth-of-type(even) {
+        font-size: 90%;
+        font-weight: bold;
+    }
+    section.above-the-fold main h3 {
+        font-size: 2em;
+    }
+    section.above-the-fold form {
+        float: none;
+        margin-bottom: 2em;
+    }
+    section.above-the-fold form input {
+        width: 100%;
+    }
+    section.above-the-fold main h4 {
+        line-height: 1.4em;
+        margin-bottom: 1em;
+    }
+    section.above-the-fold main ul {
+        list-style-type: disc;
+        padding-left: 15px;
+    }
+    section.above-the-fold main ul li {
+        line-height: 1.4em;
+        margin-bottom: 1em;
+        font-size: 90%;
+    }
+    section.above-the-fold section.columns {
+        display: block;
+    }
+    section.above-the-fold section.columns aside { 
+        width: 100%;
+        padding-right: 0px;
+    }
+}
