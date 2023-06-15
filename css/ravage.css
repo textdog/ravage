@@ -48,13 +48,14 @@ section.above-the-fold.fixed {
 
 section.above-the-fold header {
     display: flex;
+    flex-direction: row-reverse;
     width: 100%;
     background-color: #fff;
     box-sizing: border-box;
     padding: 0 0 1em 0;
     align-items: flex-end;
     justify-content: start;
-    margin: 2em 0 .5em 0;
+    margin: 2em 0 2em 0;
 }
 
 section.above-the-fold header div.vertical-align {
@@ -91,28 +92,47 @@ section.above-the-fold header div.vertical-align a {
     cursor: pointer;
 }
 
-section.above-the-fold header div.vertical-align a img {
+section.above-the-fold header nav a img {
     height: 80px;
     width: 80px;
 }
 
-section.above-the-fold section.video-container {
-    position: relative;
-    background-color: white;
+section.above-the-fold section.hero {
+    display: flex;
+    flex-direction: row-reverse;
     width: 100%;
     max-width: 1200px;
+}
+
+section.above-the-fold section.hero aside {
+    width: 35%;
+}
+
+section.above-the-fold section.hero aside p {
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    padding-right: 1em;
+    text-transform: uppercase;
+}
+
+section.above-the-fold div.video-container {
+    position: relative;
+    background-color: white;
+    width: 65%;
     margin: 0px auto;
     z-index: 2;
     white-space: nowrap;
     font-size: 0em;
 }
 
-section.above-the-fold section.video-container img {
+section.above-the-fold div.video-container img {
     width: 100%;
     height: auto;
 }
 
-section.above-the-fold section.video-container ul.video {
+section.above-the-fold div.video-container ul.video {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -124,27 +144,27 @@ section.above-the-fold section.video-container ul.video {
     font-size: 16px;
 }
 
-section.above-the-fold section.video-container ul.video li {
+section.above-the-fold div.video-container ul.video li {
     color: white;
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.1em;
     width: 32%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-section.above-the-fold section.video-container ul.video li:first-child {
+section.above-the-fold div.video-container ul.video li:first-child {
     justify-content: flex-end;
     padding-bottom: 1em;
     text-align: left;
 }
 
-section.above-the-fold section.video-container ul.video li:nth-of-type(even) {
-    font-size: 1.5em;
+section.above-the-fold div.video-container ul.video li:nth-of-type(even) {
+    font-size: 1.3em;
 }
 
-section.above-the-fold section.video-container ul.video li:last-child {
+section.above-the-fold div.video-container ul.video li:last-child {
     justify-content: flex-end;
     padding-bottom: 1em;
     text-align: right;
@@ -158,7 +178,8 @@ section.above-the-fold main h3 {
     text-transform: uppercase;
     font-size: 3.2em;
     font-weight: 300;
-    transform: translateY(-40%);
+    /* transform: translateY(-40%);*/
+    margin-top: 1em;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
@@ -207,7 +228,7 @@ section.above-the-fold main ul li {
 }
 
 section.above-the-fold section.columns {
-    margin-top: 1em;
+    margin-top: 2em;
     overflow: hidden;
     display: flex;
 }
@@ -292,6 +313,10 @@ section.below-the-fold img {
 
 /* mobile LAST */
 @media (max-width: 640px) {
+    section.above-the-fold header {
+        align-items: flex-start;
+        margin-bottom: 0em;
+    }
     section.above-the-fold header div.vertical-align {
         display: block;
     }
@@ -304,10 +329,23 @@ section.below-the-fold img {
         margin-bottom: 1em;
         line-height: 1.6em;
     }
-    section.above-the-fold section.video-container ul.video li {
+    section.above-the-fold section.hero {
+        display: block;
+    }
+    section.above-the-fold section.hero div.video-container {
+        width: 100%;
+    }
+    section.above-the-fold section.hero aside {
+        padding-top: 2em;
+        width: 100%;
+    }
+    section.above-the-fold section.hero aside p {
+        padding-right: 0px;
+    }
+    section.above-the-fold div.video-container ul.video li {
         font-size: 80%;
     }
-    section.above-the-fold section.video-container ul.video li:nth-of-type(even) {
+    section.above-the-fold div.video-container ul.video li:nth-of-type(even) {
         font-size: 90%;
         font-weight: bold;
     }

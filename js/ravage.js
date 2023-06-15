@@ -18,6 +18,8 @@ const initCoordinates = () => {
 }
 
 const scrollCallback = () => {
+    if (window.innerWidth <= 640) return;
+    
     const scrollY = window.scrollY;
 
     if (window.innerHeight + scrollY > weirdShitOffset) {
