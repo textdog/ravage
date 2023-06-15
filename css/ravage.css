@@ -100,7 +100,6 @@ section.above-the-fold header nav a img {
 section.above-the-fold section.hero {
     display: flex;
     flex-direction: row-reverse;
-    align-items: flex-end;
     width: 100%;
     max-width: 1200px;
 }
@@ -113,7 +112,7 @@ section.above-the-fold section.hero aside p {
     font-size: 1.4em;
     font-weight: bold;
     line-height: 1.5em;
-    margin-top: 1em;
+    margin-bottom: 1em;
     padding-right: 1em;
     text-transform: uppercase;
 }
