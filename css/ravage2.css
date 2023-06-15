@@ -105,27 +105,28 @@ section.above-the-fold section.video-container {
     white-space: nowrap;
 }
 
-section.above-the-fold section.video-container div.side-align {
+section.above-the-fold section.video-container div.side-align { 
     display: inline-block;
+    vertical-align: top;
     width: 30%;
-    height: auto;
-    @media (max-width: 400px) {
+    @media (max-width: 300px) {
         width: 100%;}
-    box-sizing: border-box;
-    align-items: left;
-      
+    height: auto;
 }
 
 section.above-the-fold section.video-container div.side-align h2 {
-    text-transform: uppercase;
-    padding-left: 2em;
-    line-height: 1.4em;
-    font-size: 1.1em;
+    display: inline;
+    line-height: 4em;
+    margin-top: -30px;
+    font-size: 1.5em;
     font-weight: bold;
+    word-break: break-all;
+    hyphens: manual;
 }
 
 section.above-the-fold section.video-container img {
     display: inline-block;
+    margin-top: 40px;
     width: 70%;
     height: auto;
 }
@@ -133,21 +134,21 @@ section.above-the-fold section.video-container img {
 
 section.above-the-fold section.video-container ul.video {
     position: absolute;
-    right: 50%;
-    transform: translateX(-50%);
+    left: 70%;
+    transform: translateX(-57%);
     bottom: 0px;
-    width: 100%;
-    height: 80%;
+    width: 65%;
+    height: 85%;
     display: flex;
-    justify-content: left;
-    font-size: 16px;
+    justify-content: center;
+    font-size: 12px;
 }
 
 section.above-the-fold section.video-container ul.video li {
     color: white;
-    text-align: left;
+    text-align: center;
     font-size: 1.4em;
-    width: 70%;
+    width: 32%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,6 +172,7 @@ section.above-the-fold section.video-container ul.video li:last-child {
 
 section.above-the-fold main {
     background: white;
+    padding-top: 40px;
 }
 
 section.above-the-fold main h3 {
