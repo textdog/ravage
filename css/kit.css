@@ -20,6 +20,10 @@
 
 /*General Rules*/
 
+html{
+   scroll-behavior: smooth;
+}
+
 body{
    background-color: #FFFFFF;
    color: #000000;
@@ -38,9 +42,9 @@ body{
 
 /*Header Section*/
 section.header-content{
+   position: relative;
+   top: 50px;
    font-weight: normal;
-
-   padding: 10px;
 }
 
 section.header-content h1{
@@ -80,7 +84,7 @@ section.main h3{
 }
 
 section.main div{
-   padding-top: 30px;
+   padding-top: 0px;
 }
 
 section.main div.synopsis{
@@ -99,20 +103,31 @@ section.main div.synopsis img{
    border: 5px solid #000000;
 }
 
-section.main div#stills img{
-   display: inline;
-}
-
 section.main div.synopsis ul li{
    list-style-type: none;
    margin: auto;
    width: 15em;
 }
 
+section.main div#stills img{
+   display: inline;
+}
+
+section.main div#ss ul li{
+   list-style-type: none;
+   margin: auto;
+   width: 450px;
+}
+
+section.main div#ss ul li p.date{
+   font-size: 12px;
+   font-style: italic;
+}
+
 section.main div#pr ul li{
    list-style-type: none;
    margin: auto;
-   width: 100px;
+   width: 800px;
 }
 
 section.main section.navbox{
@@ -127,7 +142,7 @@ section.main section.navbox{
 
 section.main section.navbox div.navlink{
    border-top: none;
-   width: 150px;
+   width: 160px;
    padding: 5px;
    margin: 10px;
    font-size: 1.4em;
@@ -136,17 +151,19 @@ section.main section.navbox div.navlink{
 }
 
 section.main section.navbox div.navlink a:link{
+   display: flex;
+   justify-content: flex-start;
    word-wrap: break-word;
    color: #000000;
    text-decoration: none;
-   width: 350px;
+   width: 200px;
 }
 
 section.main section.navbox div.navlink a:hover{
    color: #000000;
    background-color: #777777;
    text-decoration: none;
-   width: 350px;
+   width: 200px;
 }
 
 section.main section.navbox div.navlink a:visited{
@@ -161,19 +178,8 @@ section.footer{
    width: 800px;
 }
 
-section.main div#ss ul li{
-   list-style-type: none;
-   margin: auto;
-   width: 150px;
-}
-
-section.main div#ss ul li p.date{
-   font-size: 12px;
-   font-style: italic;
-}
-
 section.footer div{
-   padding: 25px;
+   padding: 5px;
 }
 
 section.footer h1{
@@ -182,7 +188,7 @@ section.footer h1{
 
 section.footer div#other ul li{
    margin: auto;
-   width: 100px;
+   width: 800px;
    list-style-type: none;
 }
 
@@ -213,4 +219,25 @@ section.footer div#contact img{
 
    margin: auto;
    padding-top: 10px;
+}
+
+/*Mobile Adjustments -- mmorley*/
+@media(max-width: 640px){
+   section.main div.navbox{
+      word-wrap: break-word;
+      width: 50px;
+   }
+
+   section.main div.navbox a:link{
+      color: #FF0000;
+   }
+
+   section.main div.navbox a:hover{
+      color: #FF0000;
+   }
+
+   section.main div.navbox a:visited{
+      color: #FF0000;
+   }
+
 }
