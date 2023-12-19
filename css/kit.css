@@ -103,6 +103,16 @@ section.main div.synopsis img{
    border: 5px solid #000000;
 }
 
+section.main div.synopsis section.trailer-laurels img{
+   border: none;
+   height: 100px;
+   width: 150px;
+   position: relative;
+   left: 150px;
+   display: inline-flex;
+   align-items: flex-end;
+}
+
 section.main div.synopsis ul li{
    list-style-type: none;
    margin: auto;
