@@ -42,11 +42,19 @@ body{
 
 /*Header Section*/
 section.header-content{
-   display: flex;
    align-items: center;
    position: relative;
-   top: 50px;
+   top: 0px;
    font-weight: normal;
+}
+
+section.header-content div.title{
+   display: flex;
+   position: relative;
+   left: 5em;
+   width: 100%;
+   box-sizing: border-box;
+   align-items: center;
 }
 
 section.header-content h1{
@@ -64,10 +72,20 @@ section.header-content h2{
 }
 
 section.header-content a{
-   position: absolute;
-   left: 35px;
+   /*position: absolute;
+   left: 2.5em;
+   top: 7.5em;
    font-style: normal;
+   font-weight: bold;*/
+   position: relative;
+   left: 10em;
+   text-align: right;
+   text-transform: uppercase;
+   text-align: right;
+   line-height: 1.4em;
+   font-size: 1.1em;
    font-weight: bold;
+   cursor: pointer;
 }
 
 section.header-content a:hover{
