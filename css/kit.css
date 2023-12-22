@@ -30,7 +30,7 @@ body{
 
    display: flex;
    flex-direction: column;
-   text-align: center;
+   text-align: left;
    justify-content: center;
 
    position: relative;
@@ -42,6 +42,8 @@ body{
 
 /*Header Section*/
 section.header-content{
+   display: flex;
+   align-items: center;
    position: relative;
    top: 50px;
    font-weight: normal;
@@ -51,6 +53,14 @@ section.header-content h1{
    text-transform: uppercase;
    font-weight: normal;
    font-size: 3.3em;
+}
+
+section.header-content h2{
+   text-transform: uppercase;
+   padding-left: 2em;
+   line-height: 1.4em;
+   font-size: 1.1em;
+   font-weight: bold;
 }
 
 section.header-content a{
@@ -72,11 +82,20 @@ section.main{
 }
 
 section.main h1{
-   font-size: 50px;
+   text-transform: uppercase;
+   padding-left: 2em;
+   line-height: 1.4em;
+   text-align: left;
+   font-size: 1.4em;
+   font-weight: bold;
 }
 
 section.main h2{
-   font-size: 35px;
+   text-transform: uppercase;
+   padding-left: 2em;
+   line-height: 1.4em;
+   font-size: 1.1em;
+   font-weight: bold;
 }
 
 section.main h3{
@@ -94,6 +113,10 @@ section.main div.synopsis{
 
 section.main div.synopsis p{
    color: #000000;
+   font-size: 1.4em;
+   line-height: 1.5em;
+   margin-bottom: 1em;
+   padding-right: 1em;
 }
 
 section.main div.synopsis img{
@@ -108,29 +131,63 @@ section.main div.synopsis section.trailer-laurels img{
    height: 100px;
    width: 150px;
    position: relative;
-   left: 150px;
+   left: 350px;
    display: inline-flex;
    align-items: flex-end;
 }
 
 section.main div.synopsis ul li{
    list-style-type: none;
-   margin: auto;
+   margin: none;
+   line-height: 1.25em;
+   font-size: 1.1em;
    width: 15em;
 }
 
+section.main div#artistbios p{
+   font-size: 1.4em;
+   line-height: 1.5em;
+   margin-bottom: 1em;
+   padding-right: 1em;
+}
+
+
+section.main div#artistbios img{
+   height: 200px;
+   width: 300px;
+}
+
 section.main div#stills img{
+   height: 200px;
+   width: 350px;
    display: inline;
+}
+
+section.main div#ss a{
+   background-color: #32CD32;
+   color: #FFFFFF;
+   border: 1px solid black;
+   margin-top: 5px;
+   padding: 5px 5px 5px 5px;
+   position: relative;
+   top: 10px;
+}
+
+section.main div#ss a:hover{
+   background-color: #00AA00;
 }
 
 section.main div#ss ul li{
    list-style-type: none;
-   margin: auto;
+   text-align: left;
+   line-height: 1.25em;
+   font-size: 1.1em;
+   margin: none;
    width: 450px;
 }
 
 section.main div#ss ul li p.date{
-   font-size: 12px;
+   font-size: 1.1em;
    font-style: italic;
 }
 
@@ -141,8 +198,9 @@ section.main div#pr ul li{
 }
 
 section.main section.navbox{
+   /*background-image: linear-gradient(270deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+*/
    background-color: #FFFFFF;
-
    position: fixed;
    top: 200px;
    left: 0px;
@@ -156,7 +214,8 @@ section.main section.navbox div.navlink{
    padding: 5px;
    margin: 10px;
    font-size: 1.4em;
-   font-weight: bold;
+   text-transform: uppercase;
+   font-weight: 300;
    font-style: normal;
 }
 
@@ -196,14 +255,26 @@ section.footer h1{
    font-size: 50px;
 }
 
+section.footer div#contact{
+   /*background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+   */
+   background-color: #FFFFFF;
+   display: flex;
+   position: fixed;
+   bottom: 0px;
+   margin: auto;
+   align-items: center;
+   z-index: 9;
+}
+
 section.footer div#other ul li{
    margin: auto;
    width: 800px;
    list-style-type: none;
 }
-
 section.footer div#contact h1{
    font-style: normal;
+   padding-right: 10px;
 }
 
 section.footer div#contact form{
@@ -211,13 +282,20 @@ section.footer div#contact form{
    width: 350px;
    padding: 5px 0px 5px 0px;
    border: 1px solid black;
-   background-color: #FF0000;
+   background-color: #32CD32;
    color: #FFFFFF;
 }
 
+section.footer div#contact p{
+   text-align: right;
+   padding-right: 10px;
+}
+
 section.footer div#contact form button{
+   position: relative;
    background-color: #000000;
    color: #FFFFFF;
+   cursor: pointer;
 
    font-weight: bold;
 }

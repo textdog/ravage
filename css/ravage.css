@@ -97,6 +97,19 @@ section.above-the-fold header nav a img {
     width: 80px;
 }
 
+/*laurels for front page. -- mmorley*/
+section.above-the-fold div.vertical-align img.laurel{
+    display: inline;
+    height: 60px;
+    width: 90px;
+ 
+    margin-left: 10px;
+    padding-top: 10px;
+
+    position: relative;
+    left: 100px;
+ }
+
 section.above-the-fold section.hero {
     display: flex;
     flex-direction: row-reverse;
@@ -227,19 +240,6 @@ section.above-the-fold main h4 {
     font-weight: bold;
     line-height: 1.25em;
 }
-
-/*laurels for front page. -- mmorley*/
-section.above-the-fold div.vertical-align img.laurel{
-    display: inline;
-    height: 60px;
-    width: 90px;
- 
-    margin-left: 10px;
-    padding-top: 10px;
-
-    position: relative;
-    left: 100px;
- }
 
 section.above-the-fold main ul li {
     line-height: 1.25em;
