@@ -329,21 +329,40 @@ section.footer div#contact img{
 
 /*Mobile Adjustments -- mmorley*/
 @media(max-width: 640px){
+   body{
+      max-width: 640px;
+      padding-left: 50px;
+   }
+
+   section.header-content{
+      align-items: flex-start;
+      margin-bottom: 0em;
+   }
+
+   section.header-content div.title h1{
+      margin-bottom: .2em;
+   }
+
+   section.header-content div.title h2{
+      padding-left: 0px;
+      font-size: 80%;
+      margin-bottom: 1em;
+      line-height: 1.6em;
+   }
+
    section.main div.navbox{
       word-wrap: break-word;
       width: 50px;
    }
 
-   section.main div.navbox a:link{
-      color: #FF0000;
+   section.main div#ss a{
+      width: 600px;
+      word-wrap: break-word;
    }
 
-   section.main div.navbox a:hover{
-      color: #FF0000;
-   }
-
-   section.main div.navbox a:visited{
-      color: #FF0000;
+   section.footer div#contact{
+      width: 640px;
+      color: #32CD32;
    }
 
 }
