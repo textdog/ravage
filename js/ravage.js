@@ -18,7 +18,7 @@ const initCoordinates = () => {
 }
 
 const scrollCallback = () => {
-    if (window.innerWidth <= 640) return;
+    if (window.innerWidth <= 100) return;
     
     const scrollY = window.scrollY;
 
