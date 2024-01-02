@@ -259,6 +259,13 @@ section.main section.navbox div.navlink a:visited{
    width: 350px;
 }
 
+section.main section.navbox img.social{
+   height: 50px;
+   width: 50px;
+   margin: auto;
+   border-radius: 15px;
+}
+
 /*Footer Section*/
 section.footer{
    margin: auto;
@@ -352,7 +359,7 @@ section.footer div#contact img{
 
    section.main div.navbox{
       word-wrap: break-word;
-      width: 50px;
+      width: 75px;
    }
 
    section.main div#ss a{
@@ -361,8 +368,8 @@ section.footer div#contact img{
    }
 
    section.footer div#contact{
-      width: 640px;
-      color: #32CD32;
+      width: 700px;
+      color: #000000;
    }
 
 }
