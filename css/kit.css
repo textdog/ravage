@@ -259,17 +259,17 @@ section.main section.navbox div.navlink a:visited{
    width: 350px;
 }
 
-section.main section.navbox img.social{
+/*section.main section.navbox img.social{
    height: 50px;
    width: 50px;
    margin: auto;
    border-radius: 15px;
-}
+}*/
 
 /*Footer Section*/
 section.footer{
    margin: auto;
-   width: 800px;
+   width: 100%;
 }
 
 section.footer div{
@@ -286,10 +286,34 @@ section.footer div#contact{
    background-color: #FFFFFF;
    display: flex;
    position: fixed;
-   bottom: 0px;
-   margin: auto;
+   width: 100%;
+   bottom: 30px;
    align-items: center;
    z-index: 9;
+}
+
+section.footer div#social{
+   background-color: #FFFFFF;
+   display: flex;
+   position: fixed;
+   width: 100%;
+   bottom: 0px;
+   align-items: center;
+   z-index: 9;
+}
+
+section.footer div#social img{
+   display: flex;
+   align-items: center;
+   height: 25px;
+   width: 25px;
+   padding-left: 10px;
+   border-radius: 5px;
+}
+
+section.footer div#social img.laurel{
+   height: 60px;
+   width: 90px;
 }
 
 section.footer div#other ul li{
@@ -337,11 +361,13 @@ section.footer div#contact img{
 /*Mobile Adjustments -- mmorley*/
 @media(max-width: 640px){
    body{
+      display: block;
       max-width: 640px;
       padding-left: 50px;
    }
 
    section.header-content{
+      display: block;
       align-items: flex-start;
       margin-bottom: 0em;
    }
@@ -358,6 +384,7 @@ section.footer div#contact img{
    }
 
    section.main div.navbox{
+      border: 1px solid black;
       word-wrap: break-word;
       width: 75px;
    }
@@ -368,7 +395,7 @@ section.footer div#contact img{
    }
 
    section.footer div#contact{
-      width: 700px;
+      width: 100%;
       color: #000000;
    }
 
