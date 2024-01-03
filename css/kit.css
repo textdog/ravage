@@ -259,12 +259,12 @@ section.main section.navbox div.navlink a:visited{
    width: 350px;
 }
 
-section.main section.navbox img.social{
+/*section.main section.navbox img.social{
    height: 50px;
    width: 50px;
    margin: auto;
    border-radius: 15px;
-}
+}*/
 
 /*Footer Section*/
 section.footer{
@@ -286,17 +286,34 @@ section.footer div#contact{
    background-color: #FFFFFF;
    display: flex;
    position: fixed;
-   bottom: 0px;
-   margin: auto;
+   width: 100%;
+   bottom: 30px;
    align-items: center;
    z-index: 9;
 }
 
-section.footer div#contact img.social{
-   height: 50px;
-   width: 50px;
-   margin: auto;
-   border-radius: 15px;
+section.footer div#social{
+   background-color: #FFFFFF;
+   display: flex;
+   position: fixed;
+   width: 100%;
+   bottom: 0px;
+   align-items: center;
+   z-index: 9;
+}
+
+section.footer div#social img{
+   display: flex;
+   align-items: center;
+   height: 25px;
+   width: 25px;
+   padding-left: 10px;
+   border-radius: 5px;
+}
+
+section.footer div#social img.laurel{
+   height: 60px;
+   width: 90px;
 }
 
 section.footer div#other ul li{
