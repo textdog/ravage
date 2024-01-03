@@ -136,13 +136,6 @@ section.above-the-fold section.hero aside h2 {
     padding-right: 1em;
 }
 
-section.above-the-fold section.hero img.social{
-    height: 50px;
-    width: 50px;
-    margin: auto;
-    border-radius: 15px;
-}
-
 section.above-the-fold div.video-container {
     position: relative;
     background-color: white;
@@ -240,6 +233,16 @@ section.above-the-fold form button {
 section.above-the-fold form strong {
     font-weight: bold;
     padding-right: 1em;
+}
+
+section.above-the-fold main img.social{
+    position: relative;
+    left: 765px;
+    bottom: 50px;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    border-radius: 15px;
 }
 
 section.above-the-fold main h4 {
