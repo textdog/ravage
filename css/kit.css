@@ -361,9 +361,10 @@ section.footer div#contact img{
 /*Mobile Adjustments -- mmorley*/
 @media(max-width: 640px){
    body{
+      text-align: center;
       display: block;
-      max-width: 640px;
       padding-left: 50px;
+      width: 100%;
    }
 
    section.header-content{
@@ -384,41 +385,47 @@ section.footer div#contact img{
    }
 
    section.main section.navbox{
+      text-align: left;
       position: fixed;
-      bottom: 150px;
+      bottom: 10%;
       word-wrap: break-word;
-      width: 190px;
+      width: 25%;
+   }
+
+   section.main section.navbox div.navlink a{
+      width: 100%;
+      word-wrap: break-word;
    }
 
    section.main section.navbox div.navlink a:hover{
-      width: 175px;
+      width: 100%;
    }
 
    section.main div#ss a{
-      width: 600px;
+      width: 80%;
       word-wrap: break-word;
    }
 
    section.footer div#contact{
-      width: 640px;
-      font-size: 10px;
+      width: 100%;
+      font-size: 90%;
       color: #000000;
    }
 
    section.footer div#contact form{
       text-align: center;
       position: relative;
-      right: 75px;
-      width: 100px;
+      right: 0%;
+      width: 25%;
    }
 
    section.footer div#contact input{
-      width: 80px;
+      width: 20%;
    }
 
    section.footer div#contact form button{
       width: 90px;
-      font-size: 12px;
+      font-size: 80%;
    }
 
 }
