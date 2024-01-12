@@ -383,10 +383,15 @@ section.footer div#contact img{
       line-height: 1.6em;
    }
 
-   section.main div.navbox{
-      border: 1px solid black;
+   section.main section.navbox{
+      position: fixed;
+      bottom: 150px;
       word-wrap: break-word;
-      width: 75px;
+      width: 190px;
+   }
+
+   section.main section.navbox div.navlink a:hover{
+      width: 175px;
    }
 
    section.main div#ss a{
@@ -395,8 +400,25 @@ section.footer div#contact img{
    }
 
    section.footer div#contact{
-      width: 100%;
+      width: 640px;
+      font-size: 10px;
       color: #000000;
+   }
+
+   section.footer div#contact form{
+      text-align: center;
+      position: relative;
+      right: 75px;
+      width: 100px;
+   }
+
+   section.footer div#contact input{
+      width: 80px;
+   }
+
+   section.footer div#contact form button{
+      width: 90px;
+      font-size: 12px;
    }
 
 }
