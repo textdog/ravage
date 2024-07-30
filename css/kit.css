@@ -20,9 +20,9 @@
 
 /*General Rules*/
 
-html{
+/*html{
    scroll-behavior: smooth;
-}
+}*/
 
 body{
    background-color: #FFFFFF;
@@ -78,7 +78,7 @@ section.header-content a{
    font-style: normal;
    font-weight: bold;*/
    position: relative;
-   left: 10em;
+   left: 0em;
    text-align: right;
    text-transform: uppercase;
    text-align: right;
@@ -86,10 +86,6 @@ section.header-content a{
    font-size: 1.1em;
    font-weight: bold;
    cursor: pointer;
-}
-
-section.header-content a:hover{
-   background-color: #777777;
 }
 
 /*Main Content*/
@@ -117,7 +113,8 @@ section.main h2{
 }
 
 section.main h3{
-   font-size: 25px;
+   font-size: 1.5em;
+   padding-left: 2.5em;
 }
 
 section.main div{
@@ -149,7 +146,7 @@ section.main div.synopsis section.trailer-laurels img{
    height: 100px;
    width: 150px;
    position: relative;
-   left: 350px;
+   left: 0em;
    display: inline-flex;
    align-items: flex-end;
 }
@@ -171,8 +168,8 @@ section.main div#artistbios p{
 
 
 section.main div#artistbios img{
-   height: 200px;
-   width: 300px;
+   height: 20%;
+   width: 20%;
 }
 
 section.main div#stills img{
@@ -183,8 +180,8 @@ section.main div#stills img{
 
 section.main div#ss a{
    background-color: #32CD32;
+   border-radius: 5px;
    color: #FFFFFF;
-   border: 1px solid black;
    margin-top: 5px;
    padding: 5px 5px 5px 5px;
    position: relative;
@@ -220,7 +217,7 @@ section.main section.navbox{
 */
    background-color: #FFFFFF;
    position: fixed;
-   top: 200px;
+   top: 10em;
    left: 0px;
 
    z-index: 0;
@@ -231,7 +228,7 @@ section.main section.navbox div.navlink{
    width: 160px;
    padding: 5px;
    margin: 10px;
-   font-size: 1.4em;
+   font-size: 2.5em;
    text-transform: uppercase;
    font-weight: 300;
    font-style: normal;
@@ -246,12 +243,12 @@ section.main section.navbox div.navlink a:link{
    width: 200px;
 }
 
-section.main section.navbox div.navlink a:hover{
+/*section.main section.navbox div.navlink a:hover{
    color: #000000;
    background-color: #777777;
    text-decoration: none;
    width: 200px;
-}
+}*/
 
 section.main section.navbox div.navlink a:visited{
    color: #000000;
@@ -278,26 +275,37 @@ section.footer div{
 
 section.footer h1{
    font-size: 50px;
+   position: absolute;
+   left: 3.5em;
+   bottom: -1em;
+}
+
+section.footer div.container{
+   background-color: #FFFFFF;
+   height: 70px;
+   width: 100%;
+   position: fixed;
+   bottom: 0px;
 }
 
 section.footer div#contact{
    /*background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
    */
-   background-color: #FFFFFF;
+   background-color: rgba(0, 0, 0, 0.0);
    display: flex;
    position: fixed;
    width: 100%;
-   bottom: 30px;
+   bottom: 1.5em;
    align-items: center;
    z-index: 9;
 }
 
 section.footer div#social{
-   background-color: #FFFFFF;
+   background-color: rgba(0, 0, 0, 0.0);
    display: flex;
    position: fixed;
    width: 100%;
-   bottom: 0px;
+   bottom: 20px;
    align-items: center;
    z-index: 9;
 }
@@ -309,9 +317,18 @@ section.footer div#social img{
    width: 25px;
    padding-left: 10px;
    border-radius: 5px;
+   position: relative;
+   bottom: 0.5em;
+}
+
+section.footer div.laurels{
+   position: absolute;
+   right: 3em;
+   bottom: -1em;
 }
 
 section.footer div#social img.laurel{
+   display: inline;
    height: 60px;
    width: 90px;
 }
@@ -321,6 +338,7 @@ section.footer div#other ul li{
    width: 800px;
    list-style-type: none;
 }
+
 section.footer div#contact h1{
    font-style: normal;
    padding-right: 10px;
@@ -330,19 +348,32 @@ section.footer div#contact form{
    margin: auto;
    width: 350px;
    padding: 5px 0px 5px 0px;
-   border: 1px solid black;
+   border-radius: 5px;
    background-color: #32CD32;
    color: #FFFFFF;
+   position: relative;
+   left: 5em;
+   bottom: -0.6em
+}
+
+section.footer div#contact form strong{
+   position: relative;
+   left: 2px;
 }
 
 section.footer div#contact p{
+   font-size: 0.8em;
    text-align: right;
    padding-right: 10px;
+   position: relative;
+   bottom: -1em;
+   left: 33em;
 }
 
 section.footer div#contact form button{
    position: relative;
    background-color: #000000;
+   border-radius: 5px;
    color: #FFFFFF;
    cursor: pointer;
 
@@ -356,6 +387,60 @@ section.footer div#contact img{
 
    margin: auto;
    padding-top: 10px;
+}
+
+@media(prefers-reduced-motion: no-preference){
+   div#social img.social:hover{
+      animation: img-highlight infinite 1s linear;
+  }
+
+  section.header-content a:hover{
+      animation: txt-highlight infinite 1s linear;
+  }
+
+   section.main section.navbox div.navlink a:hover{
+       animation: txt-highlight infinite 1s linear;
+   }
+
+   section.main div#ss a:hover{
+      animation: btn-highlight infinite 1s linear;
+   }
+}
+
+@keyframes img-highlight{
+   0% {
+       filter: contrast(100%);
+   }
+   50% {
+       filter: contrast(300%);
+   }
+   100% {
+       filter: contrast(100%);
+   }
+}
+
+@keyframes txt-highlight{
+   0%{
+       color: #000000;
+   }
+   50%{
+       color: #77AACC;
+   }
+   100%{
+       color: #000000;
+   }
+}
+
+@keyframes btn-highlight{
+   0%{
+       color: #32CD32;
+   }
+   50%{
+       color: #FFFFFF;
+   }
+   100%{
+       color: #32CD32;
+   }
 }
 
 /*Mobile Adjustments -- mmorley*/
@@ -380,6 +465,7 @@ section.footer div#contact img{
    section.header-content div.title h2{
       padding-left: 0px;
       font-size: 80%;
+      width: 50%;
       margin-bottom: 1em;
       line-height: 1.6em;
    }
@@ -390,6 +476,12 @@ section.footer div#contact img{
       bottom: 10%;
       word-wrap: break-word;
       width: 25%;
+   }
+
+   section.main section.navbox div.navlink{
+      flex-wrap: wrap;
+      flex: 100%;
+      width: 100%;
    }
 
    section.main section.navbox div.navlink a{
@@ -409,7 +501,7 @@ section.footer div#contact img{
    section.footer div#contact{
       width: 100%;
       font-size: 90%;
-      color: #000000;
+      color: #32cd32;
    }
 
    section.footer div#contact form{
@@ -419,7 +511,7 @@ section.footer div#contact img{
       width: 25%;
    }
 
-   section.footer div#contact input{
+   section.footer div#contact form input{
       width: 20%;
    }
 
@@ -427,5 +519,4 @@ section.footer div#contact img{
       width: 90px;
       font-size: 80%;
    }
-
 }

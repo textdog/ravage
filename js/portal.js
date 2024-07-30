@@ -7,7 +7,11 @@ class Show{
     }
 }
 
-function goToBooked(){
+let goToPage = (page) => {
+    window.location.href = page;
+}
+
+/*function goToBooked(){
     url  = "booked.html";
     window.location.href = url;
 }
@@ -20,7 +24,7 @@ function goToMediaKit(){
 function returnToIndex(){
     url = "index.html";
     window.location.href = url;
-}
+}*/
 
 function createShowData(showNumber){
     const output = document.querySelector("#show");
