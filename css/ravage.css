@@ -388,6 +388,10 @@ section.below-the-fold img {
     section.above-the-fold form input {
         width: 100%;
     }
+    section.above-the-fold main img.social{
+        position: relative;
+        left: 50%;
+    }
     section.above-the-fold main h4 {
         line-height: 1.4em;
         margin-bottom: 1em;

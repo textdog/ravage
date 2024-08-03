@@ -419,7 +419,7 @@ section.footer div#contact img{
 @media(max-width: 640px){
    body{
       text-align: center;
-      padding-left: 5em;
+      padding-left: 0em;
    }
 
    body p{
@@ -473,7 +473,6 @@ section.footer div#contact img{
    }
 
    section.main section.navbox{
-      background-color: #FF0000;
       text-align: left;
       position: fixed;
       bottom: 10%;
