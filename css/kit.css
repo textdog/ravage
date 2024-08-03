@@ -477,12 +477,12 @@ section.footer div#contact img{
       position: fixed;
       bottom: 10%;
       word-wrap: break-word;
-      width: 13%;
+      width: 10%;
       height: 8em;
    }
 
    section.main section.navbox div.navlink{
-      width: 15%;
+      width: 10%;
    }
 
    section.main section.navbox div.navlink a{
