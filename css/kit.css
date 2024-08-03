@@ -27,6 +27,7 @@
 body{
    background-color: #FFFFFF;
    color: #000000;
+   cursor: crosshair;
 
    display: flex;
    flex-direction: column;
@@ -84,7 +85,6 @@ section.header-content a{
    text-align: right;
    line-height: 1.4em;
    font-size: 1.1em;
-   font-weight: bold;
    cursor: pointer;
 }
 
@@ -215,7 +215,6 @@ section.main div#pr ul li{
 section.main section.navbox{
    /*background-image: linear-gradient(270deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
 */
-   background-color: #FFFFFF;
    position: fixed;
    top: 10em;
    left: 0px;
@@ -394,10 +393,6 @@ section.footer div#contact img{
       animation: img-highlight infinite 1s linear;
   }
 
-  section.header-content a:hover{
-      animation: txt-highlight infinite 1s linear;
-  }
-
    section.main section.navbox div.navlink a:hover{
        animation: txt-highlight infinite 1s linear;
    }
@@ -447,15 +442,24 @@ section.footer div#contact img{
 @media(max-width: 640px){
    body{
       text-align: center;
-      display: block;
-      padding-left: 50px;
-      width: 100%;
+      padding-left: 5em;
    }
 
-   section.header-content{
+   body p{
+      width: 20em;
+   }
+
+   section.header-content div.title{
+      position: relative;
+      left: -2em;
       display: block;
       align-items: flex-start;
       margin-bottom: 0em;
+   }
+
+   section.header-content a{
+      color: #000000;
+      text-decoration: none;
    }
 
    section.header-content div.title h1{
@@ -465,50 +469,105 @@ section.footer div#contact img{
    section.header-content div.title h2{
       padding-left: 0px;
       font-size: 80%;
-      width: 50%;
       margin-bottom: 1em;
       line-height: 1.6em;
    }
 
+   section.main{
+      margin: auto;
+      text-align: center;
+   }
+
+   section.main h3{
+      position: relative;
+      left: -10em;
+   }
+
+   section.main div.synopsis div.video iframe{
+      position: relative;
+      left: -12em;
+      width: 320px;
+      height: 180px;
+   }
+   
+   section.main div.synopsis section.trailer-laurels img{
+      position: relative;
+      left: -13em;
+   }
+
    section.main section.navbox{
+      height: 8em;
       text-align: left;
       position: fixed;
       bottom: 10%;
       word-wrap: break-word;
-      width: 25%;
+      width: 5.5em;
    }
 
    section.main section.navbox div.navlink{
-      flex-wrap: wrap;
-      flex: 100%;
       width: 100%;
    }
 
    section.main section.navbox div.navlink a{
-      width: 100%;
+      position: relative;
+      right: 1.5em;
+      font-size: 8px;
+      font-weight: bold;
       word-wrap: break-word;
    }
 
-   section.main section.navbox div.navlink a:hover{
-      width: 100%;
+   section.main div#artistbios img{
+      position: relative;
+      left: -10em;
+   }
+
+   section.main div#stills img{
+      position: relative;
+      left: -12em;
+      height: 100px;
+      width: 175px;
+      display: inline;
    }
 
    section.main div#ss a{
-      width: 80%;
       word-wrap: break-word;
    }
 
+   section.main div#ss nav#shows{
+      position: relative;
+      left: -10em;
+   }
+
    section.footer div#contact{
-      width: 100%;
       font-size: 90%;
-      color: #32cd32;
+      color: #000000;
+   }
+
+   section.footer div.container{
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+   }
+
+   section.footer div#contact h1{
+      position: relative;
+      bottom: -2em;
+      left: 1em;
+      font-size: 20px;
+   }
+
+   section.footer div#contact p{
+      position: relative;
+      bottom: -3.5em;
+      left: 2em;
    }
 
    section.footer div#contact form{
       text-align: center;
-      position: relative;
-      right: 0%;
-      width: 25%;
+      position: absolute;
+      bottom: 1em;
+      left: 11em;
+      width: 15em;
    }
 
    section.footer div#contact form input{
@@ -518,5 +577,10 @@ section.footer div#contact img{
    section.footer div#contact form button{
       width: 90px;
       font-size: 80%;
+   }
+
+   section.footer div#social div.laurels img{
+      position: relative;
+      left: 1em;
    }
 }
