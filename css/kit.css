@@ -482,7 +482,7 @@ section.footer div#contact img{
    }
 
    section.main section.navbox div.navlink{
-      width: 100%;
+      width: 15%;
    }
 
    section.main section.navbox div.navlink a{
@@ -490,6 +490,7 @@ section.footer div#contact img{
       right: 1.5em;
       font-size: 8px;
       font-weight: bold;
+      width: 15%;
       word-wrap: break-word;
    }
 
