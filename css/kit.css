@@ -430,7 +430,7 @@ section.footer div#contact img{
    section.header-content div.title{
       display: block;
       position: relative;
-      left: 2em;
+      left: 5em;
       align-items: flex-start;
       margin-bottom: 0em;
    }
@@ -564,6 +564,6 @@ section.footer div#contact img{
 
    section.footer div#social div.laurels img{
       position: relative;
-      left: 10em;
+      left: -10em;
    }
 }
