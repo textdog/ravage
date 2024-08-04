@@ -426,13 +426,13 @@ section.footer div#contact img{
       font-size: 4px;
       width: 40%;
       position: relative;
-      left: -5em;
+      left: -1em;
    }
 
    section.header-content div.title{
       display: block;
       position: relative;
-      left: -5em;
+      left: -1em;
       align-items: flex-start;
       margin-bottom: 0em;
    }
@@ -481,7 +481,7 @@ section.footer div#contact img{
       position: fixed;
       bottom: 10%;
       word-wrap: break-word;
-      width: 10%;
+      width: 25%;
       height: 8em;
    }
 
