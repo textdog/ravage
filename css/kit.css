@@ -476,7 +476,7 @@ section.footer div#contact img{
    }
 
    section.main section.navbox{
-      background-color: #FFFFFF;
+      background-color: white;
       text-align: left;
       position: fixed;
       bottom: 10%;
@@ -535,7 +535,6 @@ section.footer div#contact img{
    }
 
    section.footer div#contact h1{
-      color: #32cd32;
       position: relative;
       bottom: -2em;
       left: 1em;
@@ -543,6 +542,7 @@ section.footer div#contact img{
    }
 
    section.footer div#contact p{
+      font-size: 4px;
       position: relative;
       bottom: -3.5em;
       left: 2em;
@@ -567,8 +567,11 @@ section.footer div#contact img{
    }
 
    section.footer div.container div#social div.laurels img{
+      display: block;
       position: relative;
       left: -2em;
-      bottom: 0m;
+      bottom: 0em;
+      width: 5%;
+      height: 10%;
    }
 }
