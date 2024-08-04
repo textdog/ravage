@@ -391,6 +391,7 @@ section.below-the-fold img {
     section.above-the-fold main img.social{
         position: relative;
         left: 50%;
+        bottom: -2em;
     }
     section.above-the-fold main h4 {
         line-height: 1.4em;
