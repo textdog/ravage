@@ -557,13 +557,14 @@ section.footer div#contact img{
       width: 20%;
    }
 
-   section.footer div#contact form button{
+   section.footer div.container div#contact form button{
       width: 40%;
       font-size: 80%;
    }
 
-   section.footer div#social div.laurels img{
+   section.footer div.container div#social div.laurels img{
       position: relative;
       left: -10em;
+      bottom: 5em;
    }
 }
