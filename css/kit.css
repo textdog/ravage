@@ -463,6 +463,11 @@ section.footer div#contact img{
       left: -10em;
    }
 
+   section.main div.synopsis p{
+      position: relative;
+      left: 4em;
+   }
+
    section.main div.synopsis div.video iframe{
       position: relative;
       left: -12em;
@@ -501,6 +506,11 @@ section.footer div#contact img{
    section.main div#artistbios img{
       position: relative;
       left: -12em;
+   }
+
+   section.main div#artistbios p{
+      position: relative;
+      left: 4em;
    }
 
    section.main div#stills img{
