@@ -528,14 +528,15 @@ section.main div.synopsis ul li{
    section.main div#ss nav#shows{
       position: relative;
       left: 0em;
-      width: 80%;
+      width: 40%;
    }
       section.main div#ss nav#shows a{
       width: 40%;
       word-wrap: break-word;
    }
-
-
+    section.main div#ss nav#shows ul li p{
+    width: 80%;
+    }
    section.footer div#contact{
       color: #000000;
       font-size: 90%;
@@ -560,8 +561,8 @@ section.main div.synopsis ul li{
       font-size: 10px;
       position: relative;
       bottom: -3.8em;
-      left: 4em;
-      width: 45%;
+      left: 3.5em;
+      width: 47%;
    }
 
    section.footer div#contact form{
