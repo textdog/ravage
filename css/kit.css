@@ -423,14 +423,14 @@ section.footer div#contact img{
    }
 
    body p{
-      font-size: 6px;
+      font-size: 4px;
       width: 50%;
    }
 
    section.header-content div.title{
       display: block;
       position: relative;
-      left: 5em;
+      left: 2em;
       align-items: flex-start;
       margin-bottom: 0em;
    }
@@ -550,7 +550,7 @@ section.footer div#contact img{
       position: absolute;
       bottom: 1em;
       left: 11em;
-      width: 37%;
+      width: 25%;
    }
 
    section.footer div#contact form input{
@@ -564,7 +564,7 @@ section.footer div#contact img{
 
    section.footer div.container div#social div.laurels img{
       position: relative;
-      left: -10em;
-      bottom: 5em;
+      left: -2em;
+      bottom: 0m;
    }
 }
