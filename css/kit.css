@@ -45,7 +45,7 @@ section.header-content div.title{
    align-items: center;
    display: flex;
    position: relative;
-   left: 5em;
+   left: 0em;
    width: 100%;
    box-sizing: border-box;
 }
@@ -423,6 +423,7 @@ section.footer div#contact img{
    }
 
    body p{
+      font-size: 10px;
       width: 50%;
    }
 
