@@ -350,7 +350,6 @@ section.footer div#contact form button{
    position: relative;
    border-radius: 5px;
    cursor: pointer;
-
    font-weight: bold;
 }
 
@@ -358,7 +357,6 @@ section.footer div#contact img{
    display: inline;
    width: 150px;
    height: 100px;
-
    margin: auto;
    padding-top: 10px;
 }
@@ -423,16 +421,16 @@ section.footer div#contact img{
    }
 
    body p{
-      width: 40%;
       position: relative;
       left: 0em;
+      width: 40%;
    }
 
    section.header-content div.title{
+      align-items: flex-start;
       display: block;
       position: relative;
       left: 2em;
-      align-items: flex-start;
       margin-bottom: 0em;
    }
 
@@ -480,17 +478,18 @@ section.footer div#contact img{
       left: -13em;
    }
    
-section.main div.synopsis ul li{
-   text-align: left;
-}
+   section.main div.synopsis ul li{
+      text-align: left;
+   }
+   
    section.main section.navbox{
       background-color: white;
       text-align: left;
       position: fixed;
       bottom: 10%;
       word-wrap: break-word;
-      width: 21%;
-      height: 8em;
+      width: 20%;
+      height: 7em;
    }
 
    section.main section.navbox div.navlink{
@@ -498,10 +497,10 @@ section.main div.synopsis ul li{
    }
 
    section.main section.navbox div.navlink a{
-      position: relative;
-      right: 1.5em;
       font-size: 8px;
       font-weight: bold;
+      position: relative;
+      right: 1.5em;
       width: 15%;
       word-wrap: break-word;
    }
@@ -512,8 +511,8 @@ section.main div.synopsis ul li{
    }
 
    section.main div#artistbios p{
-      position: relative;
       text-align: left;
+      position: relative;
       left: 1em;
    }
 
@@ -530,13 +529,16 @@ section.main div.synopsis ul li{
       left: 0em;
       width: 40%;
    }
-      section.main div#ss nav#shows a{
+      
+   section.main div#ss nav#shows a{
       width: 40%;
       word-wrap: break-word;
    }
-    section.main div#ss nav#shows ul li p{
-    width: 80%;
-    }
+    
+   section.main div#ss nav#shows ul li p{
+      width: 80%;
+   }
+   
    section.footer div#contact{
       color: #000000;
       font-size: 90%;
@@ -547,14 +549,14 @@ section.main div.synopsis ul li{
       bottom: 0px;
       left: 0px;
       width: 100%;
-      height: 90px;
+      height: 80px;
    }
 
    section.footer div#contact h1{
+      font-size: 20px;
       position: relative;
       bottom: -2em;
       left: 1em;
-      font-size: 20px;
    }
 
    section.footer div#contact p{
@@ -578,8 +580,8 @@ section.main div.synopsis ul li{
    }
 
    section.footer div.container div#contact form button{
-      width: 80%;
       font-size: 80%;
+      width: 80%;
    }
 
    section.footer div.container div#social div.laurels img{
