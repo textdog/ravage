@@ -528,7 +528,7 @@ section.main div.synopsis ul li{
    section.main div#ss nav#shows{
       position: relative;
       left: 0em;
-      width: 80%;
+      width: 40%;
    }
       section.main div#ss nav#shows a{
       width: 40%;
@@ -561,7 +561,7 @@ section.main div.synopsis ul li{
       font-size: 10px;
       position: relative;
       bottom: -3.8em;
-      left: 2.5em;
+      left: 2em;
       width: 47%;
    }
 
