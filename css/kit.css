@@ -488,12 +488,12 @@ section.footer div#contact img{
       position: fixed;
       bottom: 10%;
       word-wrap: break-word;
-      width: 20%;
+      width: 60px;
       height: 7.5em;
    }
 
    section.main section.navbox div.navlink{
-      width: 10%;
+      width: 60px;
    }
 
    section.main section.navbox div.navlink a{
@@ -501,7 +501,7 @@ section.footer div#contact img{
       font-weight: bold;
       position: relative;
       right: 1.5em;
-      width: 10px;
+      width: 60px;
       word-wrap: break-word;
    }
 
