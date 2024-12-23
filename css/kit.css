@@ -479,6 +479,8 @@ section.footer div#contact img{
       word-wrap: break-word;
       width: 13%;
       height: 8em;
+      background-color: #FFFFFF;
+      border: 1px solid red;
    }
 
    section.main section.navbox div.navlink{
