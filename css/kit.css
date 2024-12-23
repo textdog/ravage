@@ -45,7 +45,7 @@ section.header-content div.title{
    align-items: center;
    display: flex;
    position: relative;
-   left: 5em;
+   left: 3em;
    width: 100%;
    box-sizing: border-box;
 }
@@ -350,7 +350,6 @@ section.footer div#contact form button{
    position: relative;
    border-radius: 5px;
    cursor: pointer;
-
    font-weight: bold;
 }
 
@@ -358,7 +357,6 @@ section.footer div#contact img{
    display: inline;
    width: 150px;
    height: 100px;
-
    margin: auto;
    padding-top: 10px;
 }
@@ -418,19 +416,21 @@ section.footer div#contact img{
 /*Mobile Adjustments -- mmorley*/
 @media(max-width: 640px){
    body{
-      text-align: center;
+      text-align: left;
       padding-left: 0em;
    }
 
    body p{
-      width: 50%;
+      position: relative;
+      left: 0em;
+      width: 40%;
    }
 
    section.header-content div.title{
+      align-items: flex-start;
       display: block;
       position: relative;
-      left: -2em;
-      align-items: flex-start;
+      left: 2em;
       margin-bottom: 0em;
    }
 
@@ -460,6 +460,12 @@ section.footer div#contact img{
       left: -10em;
    }
 
+   section.main div.synopsis p{
+      text-align: left;
+      position: relative;
+      left: 1em;
+   }
+
    section.main div.synopsis div.video iframe{
       position: relative;
       left: -12em;
@@ -471,33 +477,50 @@ section.footer div#contact img{
       position: relative;
       left: -13em;
    }
-
+   
+   section.main div.synopsis ul li{
+      text-align: left;
+   }
+   
    section.main section.navbox{
+      background-color: white;
       text-align: left;
       position: fixed;
       bottom: 10%;
       word-wrap: break-word;
+<<<<<<< HEAD
       width: 13%;
       height: 8em;
       background-color: #FFFFFF;
       border: 1px solid red;
+=======
+      width: 60px;
+      height: 7.5em;
+>>>>>>> 36ad29d109feb70cbfc58782611929180a0363a6
    }
 
    section.main section.navbox div.navlink{
-      width: 100%;
+      width: 60px;
    }
 
    section.main section.navbox div.navlink a{
-      position: relative;
-      right: 1.5em;
       font-size: 8px;
       font-weight: bold;
+      position: relative;
+      right: 1.5em;
+      width: 60px;
       word-wrap: break-word;
    }
 
    section.main div#artistbios img{
       position: relative;
       left: -12em;
+   }
+
+   section.main div#artistbios p{
+      text-align: left;
+      position: relative;
+      left: 1em;
    }
 
    section.main div#stills img{
@@ -507,17 +530,22 @@ section.footer div#contact img{
       width: 20%;
       height: 100px;
    }
-
-   section.main div#ss a{
-      word-wrap: break-word;
-   }
-
+   
    section.main div#ss nav#shows{
       position: relative;
       left: 0em;
-      width: 50%;
+      width: 40%;
    }
-
+      
+   section.main div#ss nav#shows a{
+      width: 40%;
+      word-wrap: break-word;
+   }
+    
+   section.main div#ss nav#shows ul li p{
+      width: 80%;
+   }
+   
    section.footer div#contact{
       color: #000000;
       font-size: 90%;
@@ -528,20 +556,22 @@ section.footer div#contact img{
       bottom: 0px;
       left: 0px;
       width: 100%;
+      height: 80px;
    }
 
    section.footer div#contact h1{
+      font-size: 20px;
       position: relative;
       bottom: -2em;
       left: 1em;
-      font-size: 20px;
    }
 
    section.footer div#contact p{
+      font-size: 10px;
       position: relative;
-      bottom: -3.5em;
+      bottom: -3.8em;
       left: 2em;
-      width: 35%;
+      width: 47%;
    }
 
    section.footer div#contact form{
@@ -549,20 +579,24 @@ section.footer div#contact img{
       position: absolute;
       bottom: 1em;
       left: 11em;
-      width: 37%;
+      width: 40%;
    }
 
    section.footer div#contact form input{
-      width: 20%;
+      width: 50%;
    }
 
-   section.footer div#contact form button{
-      width: 40%;
+   section.footer div.container div#contact form button{
       font-size: 80%;
+      width: 80%;
    }
 
-   section.footer div#social div.laurels img{
+   section.footer div.container div#social div.laurels img{
+      display: block;
       position: relative;
-      left: 1em;
+      left: 2em;
+      bottom: 0em;
+      width: 60px;
+      height: 40px;
    }
 }
