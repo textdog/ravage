@@ -488,15 +488,10 @@ section.footer div#contact img{
       position: fixed;
       bottom: 10%;
       word-wrap: break-word;
-<<<<<<< HEAD
       width: 13%;
       height: 8em;
       background-color: #FFFFFF;
       border: 1px solid red;
-=======
-      width: 60px;
-      height: 7.5em;
->>>>>>> 36ad29d109feb70cbfc58782611929180a0363a6
    }
 
    section.main section.navbox div.navlink{
